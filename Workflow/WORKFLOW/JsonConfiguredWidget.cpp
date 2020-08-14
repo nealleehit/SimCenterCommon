@@ -39,7 +39,7 @@ UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 #include <exception>
 #include <string>
 #include <unordered_map>
-
+#include <stdexcept>
 #include <QComboBox>
 #include <QFile>
 #include <QFileDialog>

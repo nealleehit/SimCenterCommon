@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A6F176A7-8515-430E-B343-70EB9A0B13CC}</ProjectGuid>
+    <RootNamespace>SimCenterCommonQt</RootNamespace>
+    <Keyword>QtVS_v302</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>Release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <IntermediateDirectory>Release\.moc\</IntermediateDirectory>
+    <PrimaryOutput>SimCenterCommonQt</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>Release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <IntermediateDirectory>Release\.moc\</IntermediateDirectory>
+    <PrimaryOutput>SimCenterCommonQt</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>Release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <IntermediateDirectory>Release\.moc\</IntermediateDirectory>
+    <PrimaryOutput>SimCenterCommonQt</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>Release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <IntermediateDirectory>Release\.moc\</IntermediateDirectory>
+    <PrimaryOutput>SimCenterCommonQt</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <QtInstall>msvc2019</QtInstall>
+    <QtModules>core;network;gui;widgets;charts</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="QtSettings">
+    <QtInstall>msvc2019_64</QtInstall>
+    <QtModules>core;network;gui;widgets;charts</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="QtSettings">
+    <QtInstall>msvc2019</QtInstall>
+    <QtModules>core;network;gui;widgets;charts</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="QtSettings">
+    <QtInstall>msvc2019_64</QtInstall>
+    <QtModules>core;network;gui;widgets;charts</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SimCenterCommonQt</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SimCenterCommonQt</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SimCenterCommonQt</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">SimCenterCommonQt</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;Common;..\SimCenterCommon\Common;..\curl\include;../Common;Common\ZipUtils;..\..\..\QT\5.15.0\MSVC2019\include\QtZlib;InputSheetBM;RandomVariables;..\SimCenterCommon\Workflow\GRAPHICS;Workflow\UQ;Workflow\WORKFLOW;Workflow\SIM;Workflow\EXECUTION;Workflow\EVENTS;./Workflow/EVENTS/earthquake;./Workflow/EVENTS/earthquake/StochasticMotionInput/include;Workflow\ANALYSIS;Workflow\GRAPHICS;Workflow\EDP;..\..\..\QT\5.15.0\MSVC2019\include;..\..\..\QT\5.15.0\MSVC2019\include\QtCharts;..\..\..\QT\5.15.0\MSVC2019\include\QtWidgets;..\..\..\QT\5.15.0\MSVC2019\include\QtGui;..\..\..\QT\5.15.0\MSVC2019\include\QtANGLE;..\..\..\QT\5.15.0\MSVC2019\include\QtNetwork;..\..\..\QT\5.15.0\MSVC2019\include\QtCore;Release\.moc;/include;..\..\..\QT\5.15.0\MSVC2019\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>Release\.moc\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_DEPRECATE;NDEBUG;QT_NO_DEBUG;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_DEPRECATE;NDEBUG;QT_NO_DEBUG;QT_CHARTS_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./$(Configuration)/.moc/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>.\$(Configuration)\.moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <InitFuncName>images1</InitFuncName>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>.\$(Configuration)\.rcc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;Common;..\curl\include;../Common;Common\ZipUtils;InputSheetBM;RandomVariables;Workflow\UQ;Workflow\WORKFLOW;Workflow\SIM;Workflow\EXECUTION;Workflow\EVENTS;./Workflow/EVENTS/earthquake;./Workflow/EVENTS/earthquake/StochasticMotionInput/include;Workflow\ANALYSIS;Workflow\GRAPHICS;Workflow\EDP;$(QTDIR)\include;$(QTDIR)\include\QtZlib;$(QTDIR)\include\QtCharts;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtCore;$(QTDIR)\mkspecs\win32-msvc;/include;Release\.moc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>Release\.moc\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_DEPRECATE;NDEBUG;QT_NO_DEBUG;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_DEPRECATE;NDEBUG;QT_NO_DEBUG;QT_CHARTS_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./$(Configuration)/.moc/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>.\$(Configuration)\.moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <InitFuncName>images1</InitFuncName>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>.\$(Configuration)\.rcc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;Common;..\SimCenterCommon\Common;..\curl\include;../Common;Common\ZipUtils;..\..\..\Qt\5.15.0\msvc2019\include\QtZlib;InputSheetBM;RandomVariables;..\SimCenterCommon\Workflow\GRAPHICS;Workflow\UQ;Workflow\WORKFLOW;Workflow\SIM;Workflow\EXECUTION;Workflow\EVENTS;./Workflow/EVENTS/earthquake;./Workflow/EVENTS/earthquake/StochasticMotionInput/include;Workflow\ANALYSIS;Workflow\GRAPHICS;Workflow\EDP;..\..\..\Qt\5.15.0\msvc2019\include;..\..\..\Qt\5.15.0\msvc2019\include\QtCharts;..\..\..\Qt\5.15.0\msvc2019\include\QtWidgets;..\..\..\Qt\5.15.0\msvc2019\include\QtGui;..\..\..\Qt\5.15.0\msvc2019\include\QtANGLE;..\..\..\Qt\5.15.0\msvc2019\include\QtNetwork;..\..\..\Qt\5.15.0\msvc2019\include\QtCore;Release\.moc;/include;..\..\..\Qt\5.15.0\msvc2019\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>Debug\.moc\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_DEPRECATE;DEBUG;_DEBUG;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level1</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_DEPRECATE;NDEBUG;QT_NO_DEBUG;QT_CHARTS_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./$(Configuration)/.moc/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>.\$(Configuration)\.moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <InitFuncName>images1</InitFuncName>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>.\$(Configuration)\.rcc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;Common;..\SimCenterCommon\Common;..\curl\include;../Common;Common\ZipUtils;InputSheetBM;RandomVariables;..\SimCenterCommon\Workflow\GRAPHICS;Workflow\UQ;Workflow\WORKFLOW;Workflow\SIM;Workflow\EXECUTION;Workflow\EVENTS;./Workflow/EVENTS/earthquake;./Workflow/EVENTS/earthquake/StochasticMotionInput/include;Workflow\ANALYSIS;Workflow\GRAPHICS;Workflow\EDP;$(QTDIR)\include;$(QTDIR)\include\QtZlib;$(QTDIR)\include\QtCharts;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtCore;debug\.moc;/include;$(QTDIR)\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>Debug\.moc\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_DEPRECATE;DEBUG;_DEBUG;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level1</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_DEPRECATE;NDEBUG;QT_NO_DEBUG;QT_CHARTS_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./$(Configuration)/.moc/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>.\$(Configuration)\.moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <InitFuncName>images1</InitFuncName>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>.\$(Configuration)\.rcc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Common\Utils\dialogabout.cpp" />
+    <ClCompile Include="Workflow\EXECUTION\AgaveCurl.cpp" />
+    <ClCompile Include="Workflow\EXECUTION\Application.cpp" />
+    <ClCompile Include="RandomVariables\BetaDistribution.cpp" />
+    <ClCompile Include="RandomVariables\ConstantDistribution.cpp" />
+    <ClCompile Include="RandomVariables\ContinuousDesignDistribution.cpp" />
+    <ClCompile Include="Workflow\GRAPHICS\Controller2D.cpp" />
+    <ClCompile Include="Workflow\UQ\GlobalReliabilityWidget.cpp" />
+    <ClCompile Include="Workflow\UQ\LocalReliabilityWidget.cpp" />
+    <ClCompile Include="Workflow\WORKFLOW\CustomizedItemModel.cpp" />
+    <ClCompile Include="Workflow\UQ\DakotaEngine.cpp" />
+    <ClCompile Include="Workflow\UQ\DakotaInputReliability.cpp" />
+    <ClCompile Include="Workflow\UQ\DakotaInputSampling.cpp" />
+    <ClCompile Include="Workflow\UQ\DakotaInputSensitivity.cpp" />
+    <ClCompile Include="Workflow\UQ\DakotaResults.cpp" />
+    <ClCompile Include="Workflow\UQ\DakotaResultsReliability.cpp" />
+    <ClCompile Include="Workflow\UQ\DakotaResultsSampling.cpp" />
+    <ClCompile Include="Workflow\UQ\DakotaResultsSensitivity.cpp" />
+    <ClCompile Include="Workflow\EDP\EDP.cpp" />
+    <ClCompile Include="Workflow\EDP\EDP_EarthquakeSelection.cpp" />
+    <ClCompile Include="Workflow\EVENTS\ExistingSimCenterEvents.cpp" />
+    <ClCompile Include="Workflow\ANALYSIS\FEM_Selection.cpp" />
+    <ClCompile Include="Common\FooterWidget.cpp" />
+    <ClCompile Include="Workflow\UQ\GaussianProcessInputWidget.cpp" />
+    <ClCompile Include="InputSheetBM\GeneralInformationWidget.cpp" />
+    <ClCompile Include="Workflow\GRAPHICS\GlWidget2D.cpp" />
+    <ClCompile Include="Common\GoogleAnalytics.cpp" />
+    <ClCompile Include="Workflow\GRAPHICS\GraphicView2D.cpp" />
+    <ClCompile Include="RandomVariables\GumbelDistribution.cpp" />
+    <ClCompile Include="Common\HeaderWidget.cpp" />
+    <ClCompile Include="Workflow\UQ\ImportanceSamplingInputWidget.cpp" />
+    <ClCompile Include="Workflow\SIM\InputWidgetBIM.cpp" />
+    <ClCompile Include="Workflow\EVENTS\InputWidgetExistingEvent.cpp" />
+    <ClCompile Include="Workflow\ANALYSIS\InputWidgetOpenSeesAnalysis.cpp" />
+    <ClCompile Include="Workflow\UQ\InputWidgetUQ.cpp" />
+    <ClCompile Include="Workflow\WORKFLOW\JsonConfiguredWidget.cpp" />
+    <ClCompile Include="Workflow\UQ\LatinHypercubeInputWidget.cpp" />
+    <ClCompile Include="RandomVariables\LineEditRV.cpp" />
+    <ClCompile Include="Workflow\EXECUTION\LocalApplication.cpp" />
+    <ClCompile Include="RandomVariables\LognormalDistribution.cpp" />
+    <ClCompile Include="Workflow\SIM\MDOF_BuildingModel.cpp" />
+    <ClCompile Include="Workflow\WORKFLOW\MainWindowWorkflowApp.cpp" />
+    <ClCompile Include="Workflow\UQ\MonteCarloInputWidget.cpp" />
+    <ClCompile Include="Workflow\GRAPHICS\MyTableWidget.cpp" />
+    <ClCompile Include="RandomVariables\NormalDistribution.cpp" />
+    <ClCompile Include="Workflow\SIM\OpenSeesBuildingModel.cpp" />
+    <ClCompile Include="Workflow\SIM\OpenSeesParser.cpp" />
+    <ClCompile Include="Workflow\UQ\PCEInputWidget.cpp" />
+    <ClCompile Include="RandomVariables\RandomVariable.cpp" />
+    <ClCompile Include="RandomVariables\RandomVariableDistribution.cpp" />
+    <ClCompile Include="RandomVariables\RandomVariablesContainer.cpp" />
+    <ClCompile Include="Common\Utils\RelativePathResolver.cpp" />
+    <ClCompile Include="Workflow\EXECUTION\RemoteApplication.cpp" />
+    <ClCompile Include="Workflow\EXECUTION\RemoteJobManager.cpp" />
+    <ClCompile Include="Workflow\EXECUTION\RemoteService.cpp" />
+    <ClCompile Include="Workflow\EXECUTION\RunLocalWidget.cpp" />
+    <ClCompile Include="Workflow\SIM\SIM_Selection.cpp" />
+    <ClCompile Include="Common\SimCenterAppWidget.cpp" />
+    <ClCompile Include="Workflow\WORKFLOW\SimCenterComboBox.cpp" />
+    <ClCompile Include="Workflow\WORKFLOW\SimCenterComponentSelection.cpp" />
+    <ClCompile Include="Workflow\WORKFLOW\SimCenterFileInput.cpp" />
+    <ClCompile Include="Workflow\GRAPHICS\SimCenterGraphPlot.cpp" />
+    <ClCompile Include="Common\SimCenterPreferences.cpp" />
+    <ClCompile Include="Workflow\WORKFLOW\SimCenterRVLineEdit.cpp" />
+    <ClCompile Include="Common\SimCenterWidget.cpp" />
+    <ClCompile Include="Workflow\EDP\StandardEarthquakeEDP.cpp" />
+    <ClCompile Include="Workflow\UQ\UQ_Engine.cpp" />
+    <ClCompile Include="Workflow\UQ\UQ_EngineSelection.cpp" />
+    <ClCompile Include="Workflow\UQ\UQ_MethodInputWidget.cpp" />
+    <ClCompile Include="Workflow\UQ\UQ_Results.cpp" />
+    <ClCompile Include="RandomVariables\UniformDistribution.cpp" />
+    <ClCompile Include="RandomVariables\UserDef.cpp" />
+    <ClCompile Include="Workflow\EXECUTION\UserDefinedApplication.cpp" />
+    <ClCompile Include="Workflow\EDP\UserDefinedEDP.cpp" />
+    <ClCompile Include="RandomVariables\WeibullDistribution.cpp" />
+    <ClCompile Include="Workflow\WORKFLOW\WorkflowAppWidget.cpp" />
+    <ClCompile Include="Common\ZipUtils\ZipUtils.cpp" />
+    <ClCompile Include="Common\ZipUtils\ioapi.c" />
+    <ClCompile Include="Workflow\GRAPHICS\qcustomplot.cpp" />
+    <ClCompile Include="Common\sectiontitle.cpp" />
+    <ClCompile Include="Common\ZipUtils\unzip.c" />
+    <ClCompile Include="Common\ZipUtils\zip.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Workflow\UQ\LocalReliabilityWidget.h" />
+    <QtMoc Include="Workflow\UQ\GlobalReliabilityWidget.h" />
+    <QtMoc Include="Workflow\EXECUTION\AgaveCurl.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\EXECUTION\Application.h">
+    </QtMoc>
+    <QtMoc Include="RandomVariables\BetaDistribution.h">
+    </QtMoc>
+    <QtMoc Include="RandomVariables\ConstantDistribution.h">
+    </QtMoc>
+    <QtMoc Include="RandomVariables\ContinuousDesignDistribution.h">
+    </QtMoc>
+    <QtMoc Include="Common\Utils\dialogabout.h" />
+    <ClInclude Include="Workflow\GRAPHICS\Controller2D.h" />
+    <QtMoc Include="Workflow\WORKFLOW\CustomizedItemModel.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\UQ\DakotaEngine.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\UQ\DakotaInputReliability.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\UQ\DakotaInputSampling.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\UQ\DakotaInputSensitivity.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\UQ\DakotaResults.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\UQ\DakotaResultsReliability.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\UQ\DakotaResultsSampling.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\UQ\DakotaResultsSensitivity.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\EDP\EDP.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\EDP\EDP_EarthquakeSelection.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\EVENTS\ExistingSimCenterEvents.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\ANALYSIS\FEM_Selection.h">
+    </QtMoc>
+    <QtMoc Include="Common\FooterWidget.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\UQ\GaussianProcessInputWidget.h">
+    </QtMoc>
+    <QtMoc Include="InputSheetBM\GeneralInformationWidget.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\GRAPHICS\GlWidget2D.h">
+    </QtMoc>
+    <ClInclude Include="Common\GoogleAnalytics.h" />
+    <QtMoc Include="Workflow\GRAPHICS\GraphicView2D.h">
+    </QtMoc>
+    <QtMoc Include="RandomVariables\GumbelDistribution.h">
+    </QtMoc>
+    <QtMoc Include="Common\HeaderWidget.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\UQ\ImportanceSamplingInputWidget.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\SIM\InputWidgetBIM.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\EVENTS\InputWidgetExistingEvent.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\ANALYSIS\InputWidgetOpenSeesAnalysis.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\UQ\InputWidgetUQ.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\WORKFLOW\JsonConfiguredWidget.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\UQ\LatinHypercubeInputWidget.h">
+    </QtMoc>
+    <QtMoc Include="RandomVariables\LineEditRV.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\EXECUTION\LocalApplication.h">
+    </QtMoc>
+    <QtMoc Include="RandomVariables\LognormalDistribution.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\SIM\MDOF_BuildingModel.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\WORKFLOW\MainWindowWorkflowApp.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\UQ\MonteCarloInputWidget.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\GRAPHICS\MyTableWidget.h">
+    </QtMoc>
+    <QtMoc Include="RandomVariables\NormalDistribution.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\SIM\OpenSeesBuildingModel.h">
+    </QtMoc>
+    <ClInclude Include="Workflow\SIM\OpenSeesParser.h" />
+    <QtMoc Include="Workflow\UQ\PCEInputWidget.h">
+    </QtMoc>
+    <QtMoc Include="RandomVariables\RandomVariable.h">
+    </QtMoc>
+    <QtMoc Include="RandomVariables\RandomVariableDistribution.h">
+    </QtMoc>
+    <QtMoc Include="RandomVariables\RandomVariablesContainer.h">
+    </QtMoc>
+    <ClInclude Include="Common\Utils\RelativePathResolver.h" />
+    <QtMoc Include="Workflow\EXECUTION\RemoteApplication.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\EXECUTION\RemoteJobManager.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\EXECUTION\RemoteService.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\EXECUTION\RunLocalWidget.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\SIM\SIM_Selection.h">
+    </QtMoc>
+    <QtMoc Include="Common\SimCenterAppWidget.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\WORKFLOW\SimCenterComboBox.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\WORKFLOW\SimCenterComponentSelection.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\WORKFLOW\SimCenterFileInput.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\GRAPHICS\SimCenterGraphPlot.h">
+    </QtMoc>
+    <QtMoc Include="Common\SimCenterPreferences.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\WORKFLOW\SimCenterRVLineEdit.h">
+    </QtMoc>
+    <QtMoc Include="Common\SimCenterWidget.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\EDP\StandardEarthquakeEDP.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\UQ\UQ_Engine.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\UQ\UQ_EngineSelection.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\UQ\UQ_MethodInputWidget.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\UQ\UQ_Results.h">
+    </QtMoc>
+    <QtMoc Include="RandomVariables\UniformDistribution.h">
+    </QtMoc>
+    <QtMoc Include="RandomVariables\UserDef.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\EXECUTION\UserDefinedApplication.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\EDP\UserDefinedEDP.h">
+    </QtMoc>
+    <QtMoc Include="RandomVariables\WeibullDistribution.h">
+    </QtMoc>
+    <QtMoc Include="Workflow\WORKFLOW\WorkflowAppWidget.h">
+    </QtMoc>
+    <ClInclude Include="Common\ZipUtils\ZipUtils.h" />
+    <ClInclude Include="Common\ZipUtils\ioapi.h" />
+    <QtMoc Include="Workflow\GRAPHICS\qcustomplot.h">
+    </QtMoc>
+    <QtMoc Include="Common\sectiontitle.h">
+    </QtMoc>
+    <ClInclude Include="Common\ZipUtils\unzip.h" />
+    <ClInclude Include="Common\ZipUtils\zip.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\Release\.moc\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;.\Release\.moc\moc_predefs.h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;.\Release\.moc\moc_predefs.h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;.\Debug\.moc\moc_predefs.h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;.\Debug\.moc\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generate moc_predefs.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate moc_predefs.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generate moc_predefs.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\.moc\moc_predefs.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\Release\.moc\moc_predefs.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\.moc\moc_predefs.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\Debug\.moc\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Common\common_experimental.qss" />
+    <None Include="Common\common_style.qss" />
+    <QtRcc Include="Common\images1.qrc">
+    </QtRcc>
+    <None Include="Common\nsf.gif" />
+    <None Include="Common\sim_logo_footer.png" />
+    <None Include="Common\style.qss" />
+    <None Include="Common\stylesheetMAC.qss" />
+    <None Include="Common\stylesheetWIN.qss" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Common\Utils\dialogabout.ui" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
